@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通讯员</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3e8e0; /* Background color for the entire page */
+            color: #894700; /* Text color */
+            font-family: 'Arial', sans-serif; /* Font for better readability */
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e18420; /* Bottom border to separate header from content */
+            box-shadow: 0 4px 8px rgb(248, 132, 0); /* Light shadow for a subtle 3D effect */
+        }
+        .header-container img {
+            height: 90px;
+        }
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .header-text h1, .header-text h2 {
+            margin: 0;
+            white-space: nowrap; /* Prevent text from wrapping to a new line */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Add ellipsis if text overflows */
+        }
+        .header-text h1 {
+            font-size: 20px; 
+        }
+        .header-text h2 {
+            font-size: 14px;
+            font-weight: normal;
+            color: #894700; 
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+        .navbar-nav .nav-link {
+            color: #894700;
+            font-size: 18px;
+            font-weight: bold; /* Making the text bold for emphasis */
+        }
+        .navbar-nav .nav-link.active {
+            color: #894700; /* Change color for active link */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #894700; /* Hover color */
+        }
+        .btn-outline-success {
+            color: #894700;
+            border-color: #894700;
+        }
+        .btn-outline-success:hover {
+            background-color: #894700;
+            color: white;
+        }
+        .container {
+            background-color: #ffffff; /* White background for the main content area */
+            padding: 20px;
+            border-radius: 8px; /* Rounded corners for a modern look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+        }
+        h1, p {
+            margin-bottom: 15px; /* Space between elements */
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                margin-right: 0;
+            }
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .btn-outline-success {
+                margin-top: 10px; /* Space between navbar and search button on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header-container">
+    <div class="d-flex align-items-center">
+        <img src="logo.png" alt="logo.png">
+        <div class="header-text ms-3">
+            <h1>联合早报学生通讯员俱乐部</h1>
+            <h2>Lianhe Zaobao Student Correspondents' Club</h2>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Merch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <form class="d-flex ms-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1>你好，我们是联合学生通讯员</h1>
+    <p>This is the homepage content. You can replace this with your own text.</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
